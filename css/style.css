@@ -221,49 +221,28 @@ body {
     color: #fff;
 }
 
-.icons ul li {
-    display: inline-block;
+.icons ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
 }
 
-.icons ul li a {
-    color: #fff;
-    border: 1px solid #fff;
-    width: 31px;
-    height: 31px;
-    line-height: 32px;
-    border-radius: 20px;
-    display: inline-block;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -o-border-radius: 20px;
-    -ms-border-radius: 20px;
+.icons ul li svg {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
 }
 
-.icons ul li a span.fa {
-    font-size: 15px;
-    margin: 0.5em;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
+.icons ul li svg {
+    fill: #E51C1C;
 }
 
-.icons ul li a span.fa.fa-facebook:hover {
-    color: #3b5998;
+.icons ul li svg:hover {
+    fill: #ffa51f;
 }
 
-.icons ul li a span.fa.fa-twitter:hover {
-    color: #55acee;
-}
-
-.icons ul li a span.fa.fa-rss:hover {
-    color: #f26522;
-}
-
-.icons ul li a span.fa.fa-vk:hover {
-    color: #45668e;
-}
 
 /*--counttime--*/
 .simply-countdown-losange {
