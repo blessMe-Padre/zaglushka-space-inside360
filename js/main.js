@@ -1,8 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
-    function countdown(daysUntilEvent) {
-        const now = new Date();
-        const endDate = new Date(now.getTime() + daysUntilEvent * 24 * 60 * 60 * 1000);
-
+    function countdown(eventDate) {
+        const endDate = new Date(eventDate);
         const timer = setInterval(function () {
             const now = new Date().getTime();
             const distance = endDate.getTime() - now;
@@ -14,10 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
             if (distance < 0) {
                 clearInterval(timer);
-                document.getElementById('countdown').innerHTML = "Событие началось!";
             }
         }, 1000);
     }
 
-    countdown(12);
+    countdown("2024-05-16");
+
 });
